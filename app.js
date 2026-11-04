@@ -1,215 +1,21 @@
-const ARTWORK = [
-  {
-    "file": "BITRAILSCD.png",
-    "name": "BITRAILSCD",
-    "url": "https://tokenscan.io/asset/BITRAILSCD"
-  },
-  {
-    "file": "BTCTWOSIXPEPE.jpg",
-    "name": "BTCTWOSIXPEPE",
-    "url": "https://tokenscan.io/asset/BTCTWOSIXPEPE"
-  },
-  {
-    "file": "CASSOPEPE.png",
-    "name": "CASSOPEPE",
-    "url": "https://tokenscan.io/asset/CASSOPEPE"
-  },
-  {
-    "file": "COPYBOBBY.jpg",
-    "name": "COPYBOBBY",
-    "url": "https://tokenscan.io/asset/COPYBOBBY"
-  },
-  {
-    "file": "DEEPLAND.gif",
-    "name": "DEEPLAND",
-    "url": "https://tokenscan.io/asset/DEEPLAND"
-  },
-  {
-    "file": "DRAWNATPEPE.png",
-    "name": "DRAWNATPEPE",
-    "url": "https://tokenscan.io/asset/DRAWNATPEPE"
-  },
-  {
-    "file": "Eggsandbread.gif",
-    "name": "Eggsandbread",
-    "url": "https://tokenscan.io/asset/Eggsandbread"
-  },
-  {
-    "file": "FAKELIBRARY.png",
-    "name": "FAKELIBRARY",
-    "url": "https://tokenscan.io/asset/FAKELIBRARY"
-  },
-  {
-    "file": "FAKGOTHICPEP.png",
-    "name": "FAKGOTHICPEP",
-    "url": "https://tokenscan.io/asset/FAKGOTHICPEP"
-  },
-  {
-    "file": "FAUXMINER.png",
-    "name": "FAUXMINER",
-    "url": "https://tokenscan.io/asset/FAUXMINER"
-  },
-  {
-    "file": "FEELSUNATMAN.png",
-    "name": "FEELSUNATMAN",
-    "url": "https://tokenscan.io/asset/FEELSUNATMAN"
-  },
-  {
-    "file": "GRAPEPE.png",
-    "name": "GRAPEPE",
-    "url": "https://tokenscan.io/asset/GRAPEPE"
-  },
-  {
-    "file": "GUERNICAPEPE.png",
-    "name": "GUERNICAPEPE",
-    "url": "https://tokenscan.io/asset/GUERNICAPEPE"
-  },
-  {
-    "file": "HOTCOCO.png",
-    "name": "HOTCOCO",
-    "url": "https://tokenscan.io/asset/HOTCOCO"
-  },
-  {
-    "file": "HUNDREDXCP.png",
-    "name": "HUNDREDXCP",
-    "url": "https://tokenscan.io/asset/HUNDREDXCP"
-  },
-  {
-    "file": "ICEDUNICORN.png",
-    "name": "ICEDUNICORN",
-    "url": "https://tokenscan.io/asset/ICEDUNICORN"
-  },
-  {
-    "file": "JUMPPEPE.png",
-    "name": "JUMPPEPE",
-    "url": "https://tokenscan.io/asset/JUMPPEPE"
-  },
-  {
-    "file": "MODERNTEMPLT.png",
-    "name": "MODERNTEMPLT",
-    "url": "https://tokenscan.io/asset/MODERNTEMPLT"
-  },
-  {
-    "file": "PEPEDAFERG.gif",
-    "name": "PEPEDAFERG",
-    "url": "https://tokenscan.io/asset/PEPEDAFERG"
-  },
-  {
-    "file": "PEPEMUTO.png",
-    "name": "PEPEMUTO",
-    "url": "https://tokenscan.io/asset/PEPEMUTO"
-  },
-  {
-    "file": "PEPEPACKS.png",
-    "name": "PEPEPACKS",
-    "url": "https://tokenscan.io/asset/PEPEPACKS"
-  },
-  {
-    "file": "PEPESTEPE.png",
-    "name": "PEPESTEPE",
-    "url": "https://tokenscan.io/asset/PEPESTEPE"
-  },
-  {
-    "file": "PEPETINESDAY.png",
-    "name": "PEPETINESDAY",
-    "url": "https://tokenscan.io/asset/PEPETINESDAY"
-  },
-  {
-    "file": "PEPEVEECON.png",
-    "name": "PEPEVEECON",
-    "url": "https://tokenscan.io/asset/PEPEVEECON"
-  },
-  {
-    "file": "PEPEYUGI.png",
-    "name": "PEPEYUGI",
-    "url": "https://tokenscan.io/asset/PEPEYUGI"
-  },
-  {
-    "file": "QUITEFROGGY.png",
-    "name": "QUITEFROGGY",
-    "url": "https://tokenscan.io/asset/QUITEFROGGY"
-  },
-  {
-    "file": "RAYCBOY.FAKERARE.png",
-    "name": "RAYCBOY.FAKERARE",
-    "url": "https://tokenscan.io/asset/RAYCBOY.FAKERARE"
-  },
-  {
-    "file": "RAYCBOY.png",
-    "name": "RAYCBOY",
-    "url": "https://tokenscan.io/asset/RAYCBOY"
-  },
-  {
-    "file": "RAYCBOY.RAREPEPE.png",
-    "name": "RAYCBOY.RAREPEPE",
-    "url": "https://tokenscan.io/asset/RAYCBOY.RAREPEPE"
-  },
-  {
-    "file": "RSYC.gif",
-    "name": "RSYC",
-    "url": "https://tokenscan.io/asset/RSYC"
-  },
-  {
-    "file": "RUDECUM.gif",
-    "name": "RUDECUM",
-    "url": "https://tokenscan.io/asset/RUDECUM"
-  },
-  {
-    "file": "SHIBCOINCARD.png",
-    "name": "SHIBCOINCARD",
-    "url": "https://tokenscan.io/asset/SHIBCOINCARD"
-  },
-  {
-    "file": "TEMPLATES.gif",
-    "name": "TEMPLATES",
-    "url": "https://tokenscan.io/asset/TEMPLATES"
-  },
-  {
-    "file": "TESTFLIP.gif",
-    "name": "TESTFLIP",
-    "url": "https://tokenscan.io/asset/TESTFLIP"
-  },
-  {
-    "file": "The70KEP.gif",
-    "name": "The70KEP",
-    "url": "https://tokenscan.io/asset/The70KEP"
-  },
-  {
-    "file": "TRUMPEPEUSA.png",
-    "name": "TRUMPEPEUSA",
-    "url": "https://tokenscan.io/asset/TRUMPEPEUSA"
-  },
-  {
-    "file": "TUBBYLAND.png",
-    "name": "TUBBYLAND",
-    "url": "https://tokenscan.io/asset/TUBBYLAND"
-  },
-  {
-    "file": "UNATAIR.png",
-    "name": "UNATAIR",
-    "url": "https://tokenscan.io/asset/UNATAIR"
-  },
-  {
-    "file": "UNATLISA.jpg",
-    "name": "UNATLISA",
-    "url": "https://tokenscan.io/asset/UNATLISA"
-  },
-  {
-    "file": "UPWARDS.png",
-    "name": "UPWARDS",
-    "url": "https://tokenscan.io/asset/UPWARDS"
-  },
-  {
-    "file": "VINTAGEUNAT.png",
-    "name": "VINTAGEUNAT",
-    "url": "https://tokenscan.io/asset/VINTAGEUNAT"
-  },
-  {
-    "file": "YUMYUMPEPE.jpg",
-    "name": "YUMYUMPEPE",
-    "url": "https://tokenscan.io/asset/YUMYUMPEPE"
-  }
-];
+let ARTWORK = [];
+
+function parseArtworkCSV(text) {
+  const lines = text.split(/\r?\n/).filter(line => line.trim() && !line.trim().startsWith('#'));
+  return lines.slice(1).map(line => {
+    const [file, supply] = line.split(',').map(value => value.trim());
+    if (!file) return null;
+    const name = file.replace(/\.[^.]+$/, '');
+    return { file, name, supply: supply || '0', url: `https://tokenscan.io/asset/${encodeURIComponent(name)}` };
+  }).filter(Boolean);
+}
+
+async function loadArtwork() {
+  const response = await fetch('artwork.csv', { cache: 'no-store' });
+  if (!response.ok) throw new Error(`Could not load artwork.csv (${response.status})`);
+  ARTWORK = parseArtworkCSV(await response.text());
+  if (!ARTWORK.length) throw new Error('artwork.csv contains no artwork rows');
+}
 const stage = document.querySelector('#stage');
 const cards = [];
 let W, H, CW, CH;
@@ -219,7 +25,6 @@ const CARD_GAP = 1;
 // Keep several passes of the collection active in the stream. Repeated artwork
 // is preferable to an empty band: the cards should feel like a continuous fall
 // from the moment the page opens.
-const POOL_SIZE = ARTWORK.length * 4;
 const STREAM_SPEED = .9;
 const STREAM_ACCEL = .004;
 const AIR_DRAG = .985;
@@ -232,6 +37,7 @@ const lightboxCard = lightbox.querySelector('.lightbox-card');
 const lightboxImage = lightbox.querySelector('.lightbox-front img');
 const lightboxName = lightbox.querySelector('.lightbox-name');
 const lightboxLink = lightbox.querySelector('.lightbox-link');
+const lightboxSupply = lightbox.querySelector('.lightbox-meta');
 let nextArtwork = 0;
 
 function size() {
@@ -247,7 +53,7 @@ function addCard(item, i) {
   el.className = 'card';
   el.type = 'button';
   el.setAttribute('aria-label', `${item.name} — click to view details`);
-  el.innerHTML = `<span class="card-inner"><span class="card-face card-front"><span class="image-placeholder" aria-hidden="true"></span><img alt="${item.name}" decoding="async"></span><span class="card-face card-back"><span class="card-name">${item.name}</span><span class="card-meta"><strong>Supply</strong>0</span><a class="card-link" href="${item.url}" target="_blank" rel="noopener">View on TokenScan ↗</a></span></span>`;
+  el.innerHTML = `<span class="card-inner"><span class="card-face card-front"><span class="image-placeholder" aria-hidden="true"></span><img alt="${item.name}" decoding="async"></span><span class="card-face card-back"><span class="card-name">${item.name}</span><span class="card-meta"><strong>Supply</strong>${item.supply}</span><a class="card-link" href="${item.url}" target="_blank" rel="noopener">View on TokenScan ↗</a></span></span>`;
   const image = el.querySelector('img');
   image.addEventListener('load', () => el.classList.add('image-loaded'));
   image.addEventListener('error', () => { el.classList.add('image-error'); image.alt = `${item.name} image unavailable`; });
@@ -358,6 +164,7 @@ function updateCard(a, item) {
   a.el.querySelector('img').alt = item.name;
   a.el.querySelector('img').removeAttribute('src');
   a.el.querySelector('.card-name').textContent = item.name;
+  a.el.querySelector('.card-meta').innerHTML = `<strong>Supply</strong>${item.supply}`;
   a.el.querySelector('.card-link').href = item.url;
   lazyLoad(a);
 }
@@ -366,6 +173,7 @@ function openLightbox(a) {
   lightboxImage.src = `All Images/${encodeURIComponent(a.item.file)}`;
   lightboxImage.alt = a.item.name;
   lightboxName.textContent = a.item.name;
+  lightboxSupply.innerHTML = `<strong>Supply</strong>${a.item.supply}`;
   lightboxLink.href = a.item.url;
   lightboxCard.classList.remove('is-flipped');
   lightbox.hidden = false;
@@ -469,14 +277,21 @@ function tick(now) {
   requestAnimationFrame(tick);
 }
 
-for (let i = 0; i < POOL_SIZE; i++) {
-  const item = ARTWORK[i % ARTWORK.length];
-  const a = addCard(item, i);
-  cards.push(a);
+async function start() {
+  await loadArtwork();
+  const poolSize = ARTWORK.length * 4;
+  for (let i = 0; i < poolSize; i++) {
+    const item = ARTWORK[i % ARTWORK.length];
+    const a = addCard(item, i);
+    cards.push(a);
+  }
+  nextArtwork = poolSize;
+  addEventListener('resize', () => { size(); cards.forEach(clamp); render(); });
+  seed();
+  requestAnimationFrame(tick);
 }
-nextArtwork = POOL_SIZE;
-addEventListener('resize', () => { size(); cards.forEach(clamp); render(); });
-seed();
-requestAnimationFrame(tick);
 
-
+start().catch(error => {
+  console.error(error);
+  stage.textContent = 'The artwork collection could not be loaded.';
+});
